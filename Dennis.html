@@ -10,26 +10,25 @@
         <style>
             body {
                 margin-top: 100px;
-                background: radial-gradient(white 60%,rgba(100,150,100,1) 95%,rgba(100,150,100,1));
-                /*background-color: yellow;*/
-                /*margin-left: auto;*/
-                /*margin-right: auto;*/
+                background-color: rgba(100,150,100,1);
+                
+            }
+            
+            a {
+              color: black;  
             }
             .navbar {
                 background-color: rgba(100,150,100,1);
                 color: black;
             }
-            a {
-              color: black;  
-            }
-            .container {
+            .mainContainer {
+                background: radial-gradient(circle at center, red 0, red, 15%,orange 20%,yellow 25%, rgba(100,150,100,1) 30%, white 50%, rgba(100,150,100,1) 80% );
                 margin-left: auto;
                 margin-right: auto;
+                
             }
             #dennis{
-                /*background-color: rgba(100,150,100,1);*/
-                /*background: radial-gradient(red, yellow);*/
-                background: radial-gradient(circle at center, red 0, orange, 40%,yellow 55%, rgba(100,150,100,1) 65%, white 66%);
+                /*display: flex;*/
                 border-radius: 50%;
                 font-family: 'Supermercado One', cursive;
                 font-weight: bolder;
@@ -40,63 +39,37 @@
                 margin-right: auto;
                 text-align: center;
                 /*width: 100%;*/
-                height: auto;
+                height: 20rem;
                 /*height: 400px;*/
             }
-            .dennis{
-                font-size: large;
+            
+         
+           
+            button {
+                height: 10rem;
+                width: 10rem;
+                
+                margin-left: auto;
+                margin-right:auto;
             }
-            .system{
+          
+            .buttonContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 20rem;
+                
+            }
+            h1 {
                 display: none;
             }
-            .topLeft {
-                display: none;
+            .header {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                color: red;
+                background-color: yellow;
             }
-            .topMiddle {
-                display: none;
-            }
-            .topRight {
-                display: none;
-            }
-            .show {
-                display: block;
-            }
-            /*.leftMiddle.top {*/
-            /*    background: linear-gradient(315deg, yellow 30%, white 31%);*/
-            /*    height: 200px;*/
-            /*}*/
-            /* .leftMiddle.bottom {*/
-            /*    background: linear-gradient(45deg, white 69%,yellow 70%);*/
-            /*    height: 200px;*/
-            /*}*/
-            /*.rightMiddle.top {*/
-            /*    background: linear-gradient(45deg, yellow 30%, white 31%);*/
-            /*    height: 200px;*/
-            /*}*/
-            /* .rightMiddle.bottom {*/
-            /*    background: linear-gradient(315deg, white 69%, yellow 70%);*/
-            /*    height: 200px;*/
-            /*}*/
-            /*.top.left {*/
-            /*    background: linear-gradient(315deg,  yellow 30%, white 31%);*/
-            /*    width: 50%;*/
-            /*    height: 400px;*/
-            /*}*/
-            /*.top.right {*/
-            /*    background: linear-gradient(45deg, yellow 30%, white 31%);*/
-            /*    width: 50%;*/
-            /*    height: 400px;*/
-            /*}*/
-            /*.bottom.left {*/
-            /*    background: linear-gradient(45deg, white 69%, yellow 70%);*/
-            /*    width: 50%;*/
-            /*    height: 400px;*/
-            /*}*/
-            /*.bottom.right {*/
-            /*    background: linear-gradient(315deg, white 69%, yellow 70%);*/
-            /*    width: 50%;*/
-            /*    height: 400px;*/
-            /*}*/
         </style>
     </head>
     <body>
@@ -113,96 +86,54 @@
                 </div>
                 <ul id="myMenu" class="nav navbar-right collapse navbar-collapse nav-pills
                 nav-justified">
-                    <li><a href="#">Charlie</a></li>
-                    <li><a href="#">Dennis</a></li>
-                    <li><a href="#">Mac</a></li>
-                    <li><a href="#">Dee</a></li>
-                    <li><a href="#">Frank</a></li>
+                    <li><a href="Charlie.html">Charlie</a></li>
+                    <li><a href="Dennis.html">Dennis</a></li>
+                    <li><a href="Mac.html">Mac</a></li>
+                    <li><a href="Dee.html">Dee</a></li>
+                    <li><a href="Frank.html">Frank</a></li>
                 </ul>
             </div>
         </nav>
        
+        <h1 class="header">The D.E.N.N.I.S System.</h1>
         
         
-        
-        <div class="container">
+        <div class="container mainContainer">
             <div class="row">
-                <div class="col-sm-4 topLeft">
-                   <h2>Nuture Dependence</h2>
+                <div class="col-sm-4 tL buttonContainer">
+                    <button type="button" class="btn btn-primary">D</button>
                 </div>
-                <div class="col-sm-4 topMiddle">
-                    <h2>Inspire Hope</h2>
-                </div>
-                <div class="col-sm-4 topRight">
-                   <h2>Demonstrate Value</h2>
+                <div class="col-sm-4 tM">
+                    <img class="img-responsive hidden" src="images/dennis2.jpeg" alt="dennis2">
+                    </div>
+                <div class="col-sm-4 tR buttonContainer">
+                    <button type="button" class="btn btn-primary">E</button>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                    ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-                    dolor in hendrerit in vulputate velit esse molestie consequat,
-                    vel illum dolore eu feugiat nulla facilisis at vero eros et
-                    accumsan et iusto odio dignissim qui blandit praesent luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi.
-                   </p>
+                <div class="col-sm-4 buttonContainer mL">
+                    <button type="button" class="btn btn-primary">N</button>
                 </div>
                 <div id="dennis" class="col-sm-4">
-                	<h2>The D.E.N.N.I.S System.</h2>
-                	<p class="dennis">D<span class="system">emonstrate value</span></p>
-                	<p class="dennis">E<span class="system">ngage physically</span></p>
-                	<p class="dennis">N<span class="system">urture dependence</span></p>
-                	<p class="dennis">N<span class="system">eglect emotionally</span></p>
-                	<p class="dennis">I<span class="system">nspire hope</span></p>
-                	<p class="dennis">S<span class="system">eparate entirely</span></p>
+                	<!--<h2>The D.E.N.N.I.S System.</h2>-->
+                	<p class="dennis d"></p>
+                	<p class="dennis e"></p>
+                	<p class="dennis n1"></p>
+                	<p class="dennis n2"></p>
+                	<p class="dennis i"></p>
+                	<p class="dennis s"></p>
                 </div>
-                <div class="col-sm-4">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                    ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-                    dolor in hendrerit in vulputate velit esse molestie consequat,
-                    vel illum dolore eu feugiat nulla facilisis at vero eros et
-                    accumsan et iusto odio dignissim qui blandit praesent luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi.
-                   </p>
+                <div class="col-sm-4 buttonContainer mR">
+                    <button type="button" class="btn btn-primary">N</button>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                    ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-                    dolor in hendrerit in vulputate velit esse molestie consequat,
-                    vel illum dolore eu feugiat nulla facilisis at vero eros et
-                    accumsan et iusto odio dignissim qui blandit praesent luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi.
-                   </p>
-                </div>
-                <div class="square col-sm-4">
-                    <div class="bottom left square col-sm-6">
-                    </div>
-                    <div class="bottom right square col-sm-6">
-                    </div>
-                </div>
-                <div class="square col-sm-4">
-                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                    quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                    ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-                    dolor in hendrerit in vulputate velit esse molestie consequat,
-                    vel illum dolore eu feugiat nulla facilisis at vero eros et
-                    accumsan et iusto odio dignissim qui blandit praesent luptatum
-                    zzril delenit augue duis dolore te feugait nulla facilisi.
-                   </p>
-                </div>
+                <div class="col-sm-4 bL buttonContainer">
+                     <button type="button" class="btn btn-primary">I</button></div>
+                <div class="col-sm-4 bM">
+                     </div>
+                <div class="col-sm-4 bR buttonContainer">
+                     <button type="button" class="btn btn-primary">S</button></div></div>
             </div>
             
         </div>

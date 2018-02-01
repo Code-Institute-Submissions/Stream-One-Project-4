@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <title>Dee</title>
+        <style>
+            body {
+                margin-bottom: 20px;
+                margin-top: 100px;
+                
+            }
+             .navbar {
+                background-color: rgba(100,150,100,1);
+                color: black;
+            }
+            a {
+                color: black;
+            }
+            icon-bar {
+                color: black;
+            }
+            /* override position and transform in 3.3.x */
+  .carousel-inner .item.left.active {
+              transform: translateX(-33%);
+            }
+            .carousel-inner .item.right.active {
+              transform: translateX(33%);
+            }
+            
+            .carousel-inner .item.next {
+              transform: translateX(33%)
+            }
+            .carousel-inner .item.prev {
+              transform: translateX(-33%)
+            }
+            
+            .carousel-inner .item.right,
+            .carousel-inner .item.left { 
+              transform: translateX(0);
+            }
+            
+            
+            .carousel-control.left,.carousel-control.right {background-image:none;}
+            
+            /*--------------------Form--------------------*/
+            legend{
+                font-size: 30px;
+                background-color: #fff;
+                border-radius: 5px;
+                border: 1px solid #999;
+                padding: 4px 15px;
+            }
+            label.field{
+                display: block;
+                text-align: right;
+                width: 30%;
+                float: left;
+            }
+            
+            input{
+                border-radius: 5px;
+                padding: 6px 8px;
+                margin: 10px;
+            }
+            fieldset{
+                width: 80%;
+                border: 1px solid #999;
+                border-radius: 20px;
+                clear: both;
+                padding: 20px;
+                margin-bottom: 10px;
+                background-color:rgba(129, 187, 201,.2);
+            }
+            input:focus{
+             background-color: #11CC11;
+            }
+            .container{
+                
+                padding: 10px 20px;
+                
+            }
+            .carousel {
+                
+                padding: 10px;
+                
+            }
+            .quickFacts {
+                border-radius: 5px;
+                border: black 2px solid;
+                padding: 10px 0;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                height: auto;
+                
+            }
+            .form{
+                
+                padding: 10px 0;
+                
+            }
+            fieldset{
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            h1 {
+                text-align: center;
+                padding: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-fixed-top navbar-default">    
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">Paddy's Pub</a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myMenu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <ul id="myMenu" class="nav navbar-right collapse navbar-collapse nav-pills
+                nav-justified">
+                    <li><a href="Charlie.html">Charlie</a></li>
+                    <li><a href="Dennis.html">Dennis</a></li>
+                    <li><a href="Mac.html">Mac</a></li>
+                    <li><a href="Dee.html">Dee</a></li>
+                    <li><a href="Frank.html">Frank</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <h1>Dee Reynolds</h1>
+        <div class="container">
+        
+            <div class="col-md-12">
+                <div class="carousel slide" id="myCarousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                             <div class="col-xs-12 col-md-4"><a href="#"><img src="http://placehold.it/500/bbbbbb/fff&amp;text=1" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-md-4"><a href="#"><img src="http://placehold.it/500/CCCCCC/fff&amp;text=2" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-md-4"><a href="#"><img src="http://placehold.it/500/eeeeee/fff&amp;text=3" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-md-4"><a href="#"><img src="http://placehold.it/500/f4f4f4/fff&amp;text=4" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-md-4"><a href="#"><img src="http://placehold.it/500/fcfcfc/333&amp;text=5" class="img-responsive"></a></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-md-4"><a href="#"><img src="http://placehold.it/500/f477f4/fff&amp;text=6" class="img-responsive"></a></div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                </div>
+            </div>
+
+        
+        
+            <div class="row">
+                <div class="col-sm-4 quickFacts">
+                    <aside>
+                        <h2>Quick Facts</h2>
+                        <dl>
+                            <dt>Name</dt>
+                            <dd>Dee Reynolds</dd>
+                        </dl>
+                        <dl>
+                            <dt>Friends call me</dt>
+                            <dd>Sweet Dee</dd>
+                        </dl>
+                        <dl>
+                            <dt>Occupation</dt>
+                            <dd>Bartender at Paddy's Pub</dd>
+                            <dd>Asspiring Actor/Comedian</dd>
+                        </dl>
+                        <dl>
+                            <dt>Birth Date</dt>
+                            <dd>August 18, 1976</dd>
+                        </dl>
+                        <dl>
+                            <dt>Place Of Birth</dt>
+                            <dd>Philadelphia, Pennsylvania</dd>
+                        </dl>
+                        <dl>
+                            <dt>Personas</dt>
+                            <dd>Martina Martinez/Crazy Paddy/Taiwan Tammy</dd>
+                        </dl>
+                        <dl>
+                            <dt>Did you know</dt>
+                            <dd>I was the first choice for the female lead in the Notebook,
+                            however due to an unfortunate schedualing conflict I had to pass</dd>
+                        </dl>
+                    </aside>  
+                </div>
+                <div class="col-sm-8 form">
+                    <form id="UserRegForm" action="server_side_script.php" method="post">
+                        <fieldset>
+                            <legend>Book Dee</legend>
+                   
+                           <label for="fname" class="field">
+                           Firstname:</label><input type="text" id="fname"
+                           placeholder="First name" name="fname" autocomplete="on"
+                           required/><br>
+                           
+                           <label for="password" class="field">
+                           Password:</label><input id="password" name="password" type="password"
+                           placeholder="Enter password" required/> <br>
+                           
+                           <label for="email" class="field">
+                           Email:</label><input id="email" type="email" name="email"
+                           placeholder="Enter email" required/> <br>
+                           
+                           
+                           <label for="mobile" class="field">
+                           Mobile:</label><input id="mobile" type="text" name="mobile"
+                           placeholder="Mobile number" pattern="08[3-9]{1}[0-9]{7}"
+                           title="08 followed by 3-9, then a 7 digit mobile number"/> <br>
+                
+                           
+                       
+                            <label for="service" class="field">Service:</label>
+                            <label><input type="radio" name="service" value="Acting"> Acting</label>
+                            <label><input type="radio" name="service" value="Comedian"> Comedian</label>
+                            <label><input type="radio" name="service" value="Other"> Other</label><br>
+                            
+                            
+                             
+                            
+                            <textarea class="form-control" placeholder="Date & Location" rows="5" id="comment"></textarea>
+                                
+                                                        
+                            
+                            
+                            <label for="label" class="field">
+                           </label><input id="label" type="submit" name="label" value="submit"/>
+                        </fieldset>
+                   </form>
+
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+   
+    </body>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</html>
+
+
+
+
+
+
+
