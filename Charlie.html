@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <title>Charlie</title>
+        <style>
+            
+            .whatCharlie {
+                background-color: green;
+                display: none;
+                text-align: center;
+                
+            }
+            .whatWeapon {
+                display: none;
+            }
+            .tryAgain {
+                display: none;
+            }
+             h1 {
+                text-align: center;
+                padding: 40px;
+            }
+            .quizInfo {
+                display: inline-block;
+            }
+            .formDiv {
+                text-align: center;
+            }
+            #myModal {
+                text-align: left;
+            }
+            #myImage {
+                border: 5px black solid;
+                border-radius: 10px;
+                height: auto;
+                margin-bottom: 10px;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+         <nav class="navbar navbar-default navbar-fixed-top">    
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">Paddy's Pub</a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myMenu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <ul id="myMenu" class="nav navbar-right collapse navbar-collapse nav-pills
+                nav-justified">
+                    <li><a href="Charlie.html">Charlie</a></li>
+                    <li><a href="Dennis.html">Dennis</a></li>
+                    <li><a href="Mac.html">Mac</a></li>
+                    <li><a href="Dee.html">Dee</a></li>
+                    <li><a href="Frank.html">Frank</a></li>
+                </ul>
+            </div>
+        </nav>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+         
+        
+        <!--<button type="button" class="btn btn-info btn-lg"  data-toggle="modal" data-target="#myForm">What Charlie are you?!</button>-->
+
+         <!--Modal -->
+        <!--<div id="myForm" name="answerform" class="modal fade" role="dialog" >-->
+        <!--  <div class="modal-dialog" name="one">-->
+        
+             <!--Modal content-->
+        <!--    <div class="modal-content" name="two">-->
+        <!--      <div class="modal-header">-->
+        <!--        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+        <!--        <h4 class="modal-title">Charlie Quiz</h4>-->
+        <!--      </div>-->
+        <!--      <div class="modal-body" name="three">-->
+        <!--        <p>Bashing rats with a baseball bat is on your to do list?</p>-->
+        <!--        <input type="number" name="answer1">-->
+        <!--        <p>Green is your favourite colour?</p>-->
+        <!--        <input type="number" name="answer2">-->
+        <!--        <p>Sometimes you need some glue to sleep?</p>-->
+        <!--        <input type="number" name="answer3">-->
+        <!--        <p>Following is friendly?</p>-->
+        <!--        <input type="number" name="answer4">-->
+                <!--<input class="work" type="submit" value="submit" data-dismiss="modal" >-->
+        <!--      </div>-->
+        <!--      <div class="modal-footer" >-->
+        <!--        <input class="work" type="submit" value="submit" data-dismiss="modal" >-->
+        <!--      </div>-->
+        <!--    </div>-->
+        
+        <!--  </div>-->
+        <!--</div>-->
+        
+      
+        
+        <h1>Charlie Kelly</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 whatCharlie">
+                    <h2>I am your alter-ego:</h2>
+                    <img id="myImage">
+                </div>
+                <div class="formDiv col-sm-offset-4 col-sm-4">
+                    <h2>Which Charlie are you? <button type="button" class="btn btn-info btn-md quizInfo" data-toggle="modal"
+                        data-target="#myModal"><span class="glyphicon glyphicon-info-sign"></span></button></h2>
+                        
+                    <div id="myModal" class="modal fade" role="dialog">
+                      <div class="modal-dialog">
+                    
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Charlie Quiz</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>For the following questions, pick a number between one and five:</p>
+                            <ol>
+                                <li>No, that is way off.</li>
+                                <li>Not for me.</li>
+                                <li>On the fence.</li>
+                                <li>Oh, I like the sound of that.</li>
+                                <li>100%.</li>
+                            </ol>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                    
+                      </div>
+                    </div>   
+                        
+                        
+                        
+                        
+                    <form id="myForm" name="answerForm" onSubmit="return false">
+                       <h4>Question 1</h4>
+                       <p>Bashing rats with a baseball bat is on your to do list?</p> 
+                       <input type="number" name="answer1" required>
+                       <h4>Question 2</h4>
+                       <p>Green is your favourite colour?</p> 
+                       <input type="number" name="answer2" required>
+                       <h4>Question 3</h4>
+                       <p>Following is friendly?</p>
+                       <input type="number" name="answer3" required>
+                       <h4>Question 4</h4>
+                       <p>Sometimes you need some glue to sleep?</p>
+                       <input type="number" name="answer4" required><br><br/>
+                       <button class="work btn btn-primary" type="submit" value="submit">Submit Quiz</button>
+                    </form>
+                </div>
+                <div class="col-sm-2 tryAgain">
+                    <h3>Want to try again?</h3>
+                    <button type="button" class="btn btn-primary">Try Again</button>
+                </div>
+                <div class="col-sm-5 whatWeapon">
+                    <h2>Your weapon of choice is:</h2>
+                </div>
+            </div>
+        </div>
+        
+           <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4">
+    			        <p>It's Always Sunny In Philadelphia</p>
+    			    </div>
+    			    <div class="col-xs-4">
+    			        <p>
+    			            Join our social media pages
+    			        <a href="#"><i class="fa fa-facebook"></i></a>
+    			            ,
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                            and
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+    			        </p>
+    			    </div>
+    			    <div class="col-xs-4">
+    			        <p>Created by Colm Hughes</p>
+    			    </div>
+    			</div>
+		    </div>
+        </footer>
+    </body>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>
+
+
+

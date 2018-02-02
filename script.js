@@ -1,8 +1,34 @@
+
 $(document).ready(function(){
     
     
-// -------------------- Index --------------------
+// -------------------- Charlie --------------------
+  let answerform = document.getElementById("myForm");
+  $(".work").click(function() {
+      let total = parseInt(answerform["answer1"].value) + parseInt(answerform["answer2"].value)
+         + parseInt(answerform["answer3"].value) + parseInt(answerform["answer4"].value);
+         if (total<= 4) {
+          alert("Hey! You got it right!");
+          document.getElementById('myImage').src='images/Charlie4.jpg';
+         } else if (total <= 8) { 
+          
+          
+         } else if (total <= 12){
+            document.getElementById('myImage').src='images/Charlie12.jpg';
+         } else if (total <= 16){
+            document.getElementById('myImage').src='images/Charlie16.jpg'; 
+         } else {
+            document.getElementById('myImage').src='images/Charlie20.jpg'; 
+         }
+    $(".whatCharlie").fadeIn(4000);
+    $(".whatWeapon").fadeIn(8000);
+    $(".tryAgain").fadeIn(12000);
+    $(".formDiv").remove();
+    });
   
+    $('.tryAgain').click(function() {
+    location.reload();
+    });
  
 //  -------------------- Dennis --------------------
  
@@ -28,7 +54,7 @@ $(document).ready(function(){
     // // // 	$(".topLeft").fadeTo(3000,1)
     // });
     $(".tL").click(function() {
-        $(".d").html("<p>Display Value</p>");
+        $(".d").html("<p>Demonstrate Value</p>");
     });
     $(".tR").click(function() {
         $(".e").html("<p>Engage Physically</p>");
@@ -74,3 +100,6 @@ $(document).ready(function(){
 });
  
 });
+
+
+

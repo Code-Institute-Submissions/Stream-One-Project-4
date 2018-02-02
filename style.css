@@ -1,0 +1,37 @@
+.navbar-default .navbar-brand {
+    color: black;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+.navbar {
+    background-color: rgba(100,150,100,1);
+    color: black;
+}
+
+a {
+    color: black;
+}
+body {
+    
+    margin-top: 100px;
+    
+                
+}
+.fa-facebook {
+    color: #3b5998;
+}
+.fa-twitter {
+    color: #1DA1F2;
+}
+.fa-youtube {
+    color: #FF0000;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+}

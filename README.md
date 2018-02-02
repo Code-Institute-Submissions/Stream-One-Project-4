@@ -1,26 +1,14 @@
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+# It's Always Sunny In Philadelphia Website
+
+This website has a page dedicated to each member of 'the gang'.
 
 
-Hi there! Welcome to Cloud9 IDE!
+## What does it do?
 
-To get you started, we included a small hello world application.
+Each page is designed from the charcters view and intends to show them in the 
+best light.
 
-1) Open the hello-world.html file
-
-2) Click on the Preview button to open a live preview pane
-
-3) Make some changes to the file, save, watch the preview, and have fun!
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+### How does it work
+ 
+The site is styled with **Bootstrap**. The quiz has been created using **Javascript** 
+and **Jquery**. The site can be viewed [HERE](https://colmhughes.github.io/Stream-One-Project/)
