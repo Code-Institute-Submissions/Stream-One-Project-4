@@ -7,64 +7,27 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Mako" rel="stylesheet">
         <link rel="stylesheet" href="style.css" type="text/css" />
         
         <title>Dennis</title>
         <style>
-            body {
-                
-                background-color: rgba(100,150,100,1);
-                
-            }
-            
-        
-            
-            .mainContainer {
-                background: radial-gradient(circle at center, red 0, red, 15%,orange 20%,yellow 25%, rgba(100,150,100,1) 30%, white 50%, rgba(100,150,100,1) 80% );
-                margin-left: auto;
-                margin-right: auto;
-                
-            }
-            #dennis{
-                border-radius: 50%;
-                font-family: 'Supermercado One', cursive;
-                font-weight: bolder;
-                font-size: medium;
-                padding: 5rem;
-                margin: 10px;
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
-                height: 20rem;
-            }
-            
-         
            
-            .btn {
-                height: 10rem;
-                width: 10rem;
-            }
-          
-            .buttonContainer {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 20rem;
-                
-            }
-            h1 {
-                display: none;
-            }
-            .header {
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
-                color: red;
-                background-color: yellow;
-            }
-            
-            
-            
+           html {
+               background-color: #B3C1DC;
+           }
+           .dennisContainer {
+              
+               background-color: #B3C1DC;
+           }
+           h1, h2, p {
+               font-family: 'Mako', sans-serif;
+           }
+           .footer > .container > .row > * > p{
+                font-family: 'Righteous', cursive;
+           }
+           
         </style>
     </head>
     <body>
@@ -90,51 +53,67 @@
             </div>
         </nav>
        
-        <h1 class="header">The D.E.N.N.I.S System.</h1>
+       
+       
+       <!----------------------Body---------------------->
+       
+       
+       
+       
         
         
-        <div class="container mainContainer">
+        
+        <div class="container-fluid dennisContainer">
+            <h1>Dennis Reynolds</h1>
             <div class="row">
-                <div class="col-sm-4 tL buttonContainer">
-                    <button type="button" class="btn btn-primary">D</button>
+                
+                <div class="col-sm-offset-1 col-sm-5">
+                    <img class="img-responsive dennisImage" src="images/Dennispage.jpg" alt="dennispage">
                 </div>
-                <div class="col-sm-4 tM">
-                    <img class="img-responsive hidden" src="images/dennis2.jpeg" alt="dennis2">
+             
+                <div class="col-sm-5">
+                    <div class="row blackboard">
+                        <h3 class="test"> </h3>
+                        <div class="d" data-text="Demonstrate Value"></div>
+                        <div class="e" data-text="Engage Physically"> </div>
+                        <div class="n1" data-text="Nurture Dependence"> </div>
+                        <div class="n2" data-text="Neglect Emotionally"> </div>
+                        <div class="i" data-text="Inspire Hope"> </div>
+                        <div class="s" data-text="Separate Entirely"> </div>
                     </div>
-                <div class="col-sm-4 tR buttonContainer">
-                    <button type="button" class="btn btn-primary">E</button>
+                    <div class="row">
+                        <h2>The Brains</h2>
+                        <p>"Mac is deluded, everyone knows I am the brains of the operation and the only thing
+                        keeping the gang together. Of course I am also the looks and anyone who knows what they're
+                        talking about would describe me as a five star man. However, not everyone can have my jawline
+                        or has their body sculpted to the proportions of Michelangelo’s David. That is where my system 
+                        comes in handy. The D.E.N.N.I.S. system refers to a fool proof system enabling men to obtain a 
+                        woman's undying love, accompanied by life love devotion (if the man so desires)."</p>
+                        <audio id="sound1" src="video/chalk.mp3" preload="auto"></audio>
+                        <button onclick="document.getElementById('sound1').play();"
+                        type="button" class="btn chalk start">D</button>
+                        <button onclick="document.getElementById('sound1').play();"
+                        type="button" class="btn chalk start2">E</button>
+                        <button onclick="document.getElementById('sound1').play();"
+                        type="button" class="btn chalk start3">N</button>
+                        <button onclick="document.getElementById('sound1').play();"
+                        type="button" class="btn chalk start4">N</button>
+                        <button onclick="document.getElementById('sound1').play();"
+                        type="button" class="btn chalk start5">I</button>
+                        <button onclick="document.getElementById('sound1').play();" 
+                        type="button" class="btn chalk start6">S</button>
+                    </div>
                 </div>
+                
+                
             </div>
-            <div class="row">
-                <div class="col-sm-4 buttonContainer mL">
-                    <button type="button" class="btn btn-primary">N</button>
-                </div>
-                <div id="dennis" class="col-sm-4">
-                	<!--<h2>The D.E.N.N.I.S System.</h2>-->
-                	<p class="dennis d"></p>
-                	<p class="dennis e"></p>
-                	<p class="dennis n1"></p>
-                	<p class="dennis n2"></p>
-                	<p class="dennis i"></p>
-                	<p class="dennis s"></p>
-                </div>
-                <div class="col-sm-4 buttonContainer mR">
-                    <button type="button" class="btn btn-primary">N</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 bL buttonContainer">
-                     <button type="button" class="btn btn-primary">I</button></div>
-                <div class="col-sm-4 bM">
-                     </div>
-                <div class="col-sm-4 bR buttonContainer">
-                     <button type="button" class="btn btn-primary">S</button></div></div>
-            </div>
-            
         </div>
        
        
-        <footer>
+       <!----------------------Footer---------------------->
+       
+       
+        <footer class="footer navbar-fixed-bottom our-footer">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-4">
@@ -142,11 +121,11 @@
     			    </div>
     			    <div class="col-xs-4">
     			        <p>
-    			            Join our social media pages
+    			            Social:
     			        <a href="#"><i class="fa fa-facebook"></i></a>
-    			            ,
+    			            
                         <a href="#"><i class="fa fa-twitter"></i></a>
-                            and
+                            
                         <a href="#"><i class="fa fa-youtube"></i></a>
     			        </p>
     			    </div>
@@ -157,9 +136,6 @@
 		    </div>
         </footer>
        
-       
-       
-    
     </body>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>

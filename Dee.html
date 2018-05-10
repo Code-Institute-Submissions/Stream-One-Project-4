@@ -6,99 +6,30 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
         <link rel="stylesheet" href="style.css" type="text/css" />
         <title>Dee</title>
         <style>
             
-           
-            /* override position and transform in 3.3.x */
-            .carousel-inner .item.left.active {
-              transform: translateX(-33%);
-            }
-            .carousel-inner .item.right.active {
-              transform: translateX(33%);
-            }
-            
-            .carousel-inner .item.next {
-              transform: translateX(33%)
-            }
-            .carousel-inner .item.prev {
-              transform: translateX(-33%)
-            }
-            
-            .carousel-inner .item.right,
-            .carousel-inner .item.left { 
-              transform: translateX(0);
-            }
-            
-            
-            .carousel-control.left,.carousel-control.right {background-image:none;}
+          
             
             /*--------------------Form--------------------*/
-            legend{
-                font-size: 30px;
-                background-color: #fff;
-                border-radius: 5px;
-                border: 1px solid #999;
-                padding: 4px 15px;
+           
+            h1, h2, legend {
+                font-family: 'Leckerli One', cursive;
             }
-            label.field{
-                display: block;
-                text-align: right;
-                width: 30%;
-                float: left;
+            html {
+                background-color: #FFFFA5;
             }
-            
-            input{
-                border-radius: 5px;
-                padding: 6px 8px;
-                margin: 10px;
+            img{
+                border: #48A136 solid 3px;
             }
-            fieldset{
-                width: 80%;
-                border: 1px solid #999;
-                border-radius: 20px;
-                clear: both;
-                padding: 20px;
-                margin-bottom: 10px;
-                background-color:rgba(129, 187, 201,.2);
+            legend {
+                background-color: pink;
             }
-            input:focus{
-             background-color: #11CC11;
-            }
-            .container{
-                
-                padding: 10px 20px;
-                
-            }
-            .carousel {
-                
-                padding: 10px;
-                
-            }
-            .quickFacts {
-                border-radius: 5px;
-                border: black 2px solid;
-                padding: 10px 0;
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
-                height: auto;
-                
-            }
-            .form{
-                
-                padding: 10px 0;
-                
-            }
-            fieldset{
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
-            }
-            h1 {
-                text-align: center;
-                padding: 40px;
+            input:focus {
+                background-color: pink;
             }
         </style>
     </head>
@@ -124,29 +55,33 @@
             </div>
         </nav>
         
-        <h1>Dee Reynolds</h1>
-        <div class="container">
         
-            <div class="col-md-12">
-                <div class="carousel slide" id="myCarousel">
+        
+        <!----------------------Body---------------------->
+        
+        
+        <div class="container-fluid content">
+            <h1>Dee Reynolds</h1>
+            <div class="deeCar col-md-12">
+                <div class="carousel slide multi-item-carousel" id="myCarousel">
                     <div class="carousel-inner">
                         <div class="item active">
-                             <div class="col-xs-12 col-md-4"><a href="#"><img src="http://placehold.it/500/bbbbbb/fff&amp;text=1" class="img-responsive"></a></div>
+                             <div class="col-xs-12 col-md-4"><a href="#"><img src="images/Dee1.png" class="img-responsive"></a></div>
                         </div>
                         <div class="item">
-                            <div class="col-xs-12 col-md-4"><a href="#"><img src="http://placehold.it/500/CCCCCC/fff&amp;text=2" class="img-responsive"></a></div>
+                            <div class="col-xs-12 col-md-4"><a href="#"><img src="images/Dee2.jpg" class="img-responsive"></a></div>
                         </div>
                         <div class="item">
-                            <div class="col-xs-12 col-md-4"><a href="#"><img src="http://placehold.it/500/eeeeee/fff&amp;text=3" class="img-responsive"></a></div>
+                            <div class="col-xs-12 col-md-4"><a href="#"><img src="images/Dee3.jpg" class="img-responsive"></a></div>
                         </div>
                         <div class="item">
-                            <div class="col-xs-12 col-md-4"><a href="#"><img src="http://placehold.it/500/f4f4f4/fff&amp;text=4" class="img-responsive"></a></div>
+                            <div class="col-xs-12 col-md-4"><a href="#"><img src="images/Dee4.jpg" class="img-responsive"></a></div>
                         </div>
                         <div class="item">
-                            <div class="col-xs-12 col-md-4"><a href="#"><img src="http://placehold.it/500/fcfcfc/333&amp;text=5" class="img-responsive"></a></div>
+                            <div class="col-xs-12 col-md-4"><a href="#"><img src="images/Dee5.jpg" class="img-responsive"></a></div>
                         </div>
                         <div class="item">
-                            <div class="col-xs-12 col-md-4"><a href="#"><img src="http://placehold.it/500/f477f4/fff&amp;text=6" class="img-responsive"></a></div>
+                            <div class="col-xs-12 col-md-4"><a href="#"><img src="images/Dee6.jpg" class="img-responsive"></a></div>
                         </div>
                     </div>
                     <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
@@ -157,7 +92,7 @@
         
         
             <div class="row">
-                <div class="col-sm-4 quickFacts">
+                <div class="col-sm-offset-1 col-sm-4 quickFacts">
                     <aside>
                         <h2>Quick Facts</h2>
                         <dl>
@@ -171,7 +106,7 @@
                         <dl>
                             <dt>Occupation</dt>
                             <dd>Bartender at Paddy's Pub</dd>
-                            <dd>Asspiring Actor/Comedian</dd>
+                            <dd>Aspiring Actor/Comedian</dd>
                         </dl>
                         <dl>
                             <dt>Birth Date</dt>
@@ -192,10 +127,10 @@
                         </dl>
                     </aside>  
                 </div>
-                <div class="col-sm-8 form">
+                <div class="col-sm-7 form">
                     <form id="UserRegForm" action="server_side_script.php" method="post">
                         <fieldset>
-                            <legend>Book Dee</legend>
+                           <legend>Book Dee</legend>
                    
                            <label for="fname" class="field">
                            Firstname:</label><input type="text" id="fname"
@@ -218,29 +153,22 @@
                 
                            
                        
-                            <label for="service" class="field">Service:</label>
-                            <label><input type="radio" name="service" value="Acting"> Acting</label>
-                            <label><input type="radio" name="service" value="Comedian"> Comedian</label>
-                            <label><input type="radio" name="service" value="Other"> Other</label><br>
-                            
-                            
-                             
-                            
-                            <textarea class="form-control" placeholder="Date & Location" rows="5" id="comment"></textarea>
-                                
-                                                        
-                            
-                            
-                            <label for="label" class="field">
+                           <label for="service" class="field">Service:</label>
+                           <label><input type="radio" name="service" value="Acting"> Acting</label>
+                           <label><input type="radio" name="service" value="Comedian"> Comedy</label>
+                           <label><input type="radio" name="service" value="Other"> Other</label><br>
+   
+                           <textarea class="form-control" placeholder="Date & Location" rows="5" id="comment"></textarea>
+           
+                           <label for="label" class="field">
                            </label><input id="label" type="submit" name="label" value="submit"/>
                         </fieldset>
-                   </form>
-
+                    </form>
                 </div>
             </div>
         </div>
         
-           <footer>
+        <footer class="footer navbar-fixed-bottom our-footer">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-4">
@@ -248,11 +176,11 @@
     			    </div>
     			    <div class="col-xs-4">
     			        <p>
-    			            Join our social media pages
+    			            Social:
     			        <a href="#"><i class="fa fa-facebook"></i></a>
-    			            ,
+    			            
                         <a href="#"><i class="fa fa-twitter"></i></a>
-                            and
+                            
                         <a href="#"><i class="fa fa-youtube"></i></a>
     			        </p>
     			    </div>
@@ -261,11 +189,7 @@
     			    </div>
     			</div>
 		    </div>
-        </footer>
-        
-        
-        
-        
+         </footer>
    
     </body>
     <script src="https://code.jquery.com/jquery.min.js"></script>
