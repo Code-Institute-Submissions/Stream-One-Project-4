@@ -108,14 +108,39 @@
                         <p>Sometimes you need some glue to sleep?</p>
                         <input type="number" name="answer4" required><br><br/>
                         <button class="work btn btn-primary btn-sm" type="submit" value="submit">Submit Quiz</button>
+                        
                     </form>
                 </div>
                 
+                <div id="error" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
                 
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title errorMessage">Value should be between 1 and 5</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>For the following questions, pick a number between one and five:</p>
+                                    <ol>
+                                        <li>No, that is way off.</li>
+                                        <li>Not for me.</li>
+                                        <li>On the fence.</li>
+                                        <li>Oh, I like the sound of that.</li>
+                                        <li>100%.</li>
+                                    </ol>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                
+                  </div>
+                </div>
                     
                     
                 
-                <div class="col-sm-5 whatWeapon">
+                <div class="col-sm-5 details">
                     <h2>The Wildcard</h2>
                     <p>"Dennis and Mac think there is no place for a wildcard in the gang but I disagree and luckily I
                     tend not to listen to them anyway. Regardless, I bring much more to the table. How do they think

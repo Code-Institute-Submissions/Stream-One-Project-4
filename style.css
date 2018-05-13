@@ -1,3 +1,5 @@
+/*--------------------NAV--------------------*/
+
 #myMenu > li > a {
     font-family: 'Righteous', cursive;
 }
@@ -9,6 +11,12 @@
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: black;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #48A136;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #48A136;
 }
 .navbar {
     background-color: #176905;
@@ -24,22 +32,26 @@ a:focus, a:hover {
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
     color: black;
 }
+/*--------------------General--------------------*/
 a {
     color: black;
 }
 body {
-    
     margin-top: 91px;
+    margin-bottom: 50px;
 }
 h1 {
     padding: 20px;
     text-align: center;
 }
+html {
+    min-height: 100%;
+    position: relative;
+}
 
 /*---------------Dee---------------*/
 
 .content {
-    /*background-color: #fDFF60;*/
     background-color: #FFFFA5;
     padding-bottom: 50px;
 }
@@ -69,24 +81,20 @@ h1 {
 .carousel {
     padding: 10px;
 }
-
-.carousel-control.left,.carousel-control.right {background-image:none;}
-
+.carousel-control.left,.carousel-control.right {
+    background-image: none;
+}
 
 .quickFacts {
     border: #48A136 3px solid;
     border-radius: 5px;
-    /*height: auto;*/
-    /*margin-left: 10px;*/
-    /*margin-right: auto;*/
     padding: 10px 0;
     text-align: center;
-    
 }
 legend {
     background-color: #fff;
-    border-radius: 5px;
     border: 1px solid #999;
+    border-radius: 5px;
     font-size: 30px;
     padding: 4px 15px;
 }
@@ -123,9 +131,23 @@ input:focus {
 
 /*---------------Charlie---------------*/
 
-.whatWeapon {
+.charlieContainer {
+    background-color: #A4DF8F;
+    padding-bottom: 50px;
+}
+#myImage {
+    border: #48A136 solid 3px;
+    border-radius: 10px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.details {
     display: none;
     text-align: center;
+}
+.details > button {
+    background-color: #48A136;
 }
 iframe {
     border: #48A136 solid 3px;
@@ -135,7 +157,7 @@ iframe {
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
-    margin: 10px 0;
+    margin: 10px;
 }
 .resp-iframe {
     position: absolute;
@@ -145,15 +167,11 @@ iframe {
     height: 100%;
     border: 0;
 }
-.whatWeapon > button {
-    background-color: #48A136;
+.quizInfo {
+    display: inline-block;
 }
 #myForm > button {
     background-color: #48A136;
-}
-
-.quizInfo {
-    display: inline-block;
 }
 .formDiv {
     text-align: center;
@@ -161,37 +179,85 @@ iframe {
 #myModal {
     text-align: left;
 }
-#myImage {
-    border: #48A136 solid 3px;
-    border-radius: 10px;
-    height: auto;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
 .question {
     border: #48A136 solid 3px;
     border-radius: 10px;
     height: auto;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
-}
-.charlieContainer {
-    background-color: #A4DF8F;
-    padding-bottom: 50px;
 }
 .tryAgain {
     padding-top: 10px;
 }
+.errorMessage {
+    color: red;
+}
+
 /*---------------Mac---------------*/
 
+.macContainer {
+    padding-bottom: 50px;
+}
 .crow .img-responsive {
     display: inline-block; 
     vertical-align: middle;
 }
+/*---------------Frank---------------*/
 
+.frankContainer {
+    background-color: #FFCCC2;
+    font-family: 'Courgette', cursive;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.frankImage {
+    border: 5px solid #48A136;
+    border-radius: 10px;
+}
+.frankPara {
+    padding-bottom: 20px;
+}
+.money {
+    border-radius: 20px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 10px;
+}
+
+@keyframes money_animation {
+    0% { transform: scale(1); }
+    30% { transform: scale(1); }
+    40% { transform: scale(1.08); }
+    50% { transform: scale(1); }
+    60% { transform: scale(1); }
+    70% { transform: scale(1.05); }
+    80% { transform: scale(1); }
+    100% { transform: scale(1); }
+}
+.pulse {
+    animation-name: money_animation;
+    animation-duration: 5000ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 /*---------------Dennis---------------*/
+
+.dennisContainer {
+    background-color: #B3C1DC;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.dennisImage {
+    border: 3px black solid;
+    margin-bottom: 20px;
+}
 .blackboard {
     background-image: url("images/Blackboard.jpg");
     border: 3px black solid;
@@ -199,7 +265,6 @@ iframe {
     color: white;
     height: 200px;
     margin: 20px;
-    
 }
 .chalk {
     background-image: url("images/Blackboard.jpg");
@@ -217,17 +282,6 @@ iframe {
     box-shadow: inset 0 3px 5px #48A136;
 }
 
-.dennisContainer {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-bottom: 50px;
-}
-.dennisImage {
-    border: 3px black solid;
-    margin-bottom: 20px;
-}
-
 
 
 /*---------------Footer---------------*/
@@ -241,29 +295,19 @@ iframe {
 .fa-youtube {
     color: #FF0000;
 }
-html {
-    min-height: 100%;
-    position: relative;
-}
-body {
-    margin-bottom: 50px;
-}
 
 .footer {
     background-color: black;
     border-top: 3px solid #48A136;
     bottom: 0;
-    color: white;
-    /*height: 50px;*/
+    color: #48A136;
+    font-family: 'Righteous', cursive;
     padding-top: 15px;
     padding-bottom: 5px;
     position: absolute;
     text-align: center;
     width: 100%;
 }
-.footer > .container > .row > * {
-    color: #48A136;
-    font-family: 'Righteous', cursive;
-}
+
 
 
