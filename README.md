@@ -14,7 +14,7 @@ best light.
 The deployed version of the web app is available on github pages: https://colmhughes.github.io/Stream-One-Project/
 
 ## View locally
-The repository is available on github: https://github.com/ColmHughes/grandslams-project2.
+The repository is available on github: https://github.com/ColmHughes/Stream-One-Project
 The git repository can be cloned and then simply run the index.html file.
 
 ## Built with 
@@ -26,7 +26,7 @@ The git repository can be cloned and then simply run the index.html file.
 
 
 ## Media
-Images were sourced from google images, the youtube video was embedded using the iframe
+Images were sourced from google images, the youtube videos were embedded using the iframe
 html tag and audio was downloaded from zapsplat.com. The text contained on this site is
 a blend of paraphrasing and direct quotes from the show.
 
@@ -39,10 +39,9 @@ for mobile and desktop. All sketches were made on 'wireframepro'.
 ## Testing
 The project was tested on many different devices and across a range of browsers.
 No automated testing was used, however all javascript/jquery was manually tested.
-
-Quiz: 
+For example the quiz:
 Inside the form I included type="number" into the input tag to limit the user to submitting numbers, I also
-included the keyword required.
+included the keyword 'required'.
 
 Each answer was parsed into an integer and added together to get our total. Our total determines which image is shown.
 Each answer was also passed into a function to ensure the number is between one and five inclusive, numbers outside this
